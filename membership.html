@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VFitness - Membership</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="media/logo.png" alt="VFitness Logo">
+            <h1>VFitness</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button onclick="search()">Search</button>
+    </header>
+
+    <section id="membership">
+        <div class="membership-options">
+            <h2>Membership Options</h2>
+            <div class="membership-card" onclick="showDetails(this)">
+                <h3>Standard Membership</h3>
+                <p>Access to gym facilities</p>
+                <p>Unlimited classes</p>
+                <p>$50/month</p>
+                <div class="details">
+                    <p>No hidden fees</p>
+                    <p>24/7 access</p>
+                    <button onclick="purchaseMembership('Standard')">Purchase</button>
+                </div>
+            </div>
+            <div class="membership-card" onclick="showDetails(this)">
+                <h3>Premium Membership</h3>
+                <p>All benefits of Standard Membership</p>
+                <p>Access to personal training sessions</p>
+                <p>$80/month</p>
+                <div class="details">
+                    <p>Free towel service</p>
+                    <p>Discounts on merchandise</p>
+                    <button onclick="purchaseMembership('Premium')">Purchase</button>
+                </div>
+            </div>
+            <!-- incomplete -->
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 VFitness. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
